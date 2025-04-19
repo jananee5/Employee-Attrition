@@ -23,7 +23,7 @@ from collections import Counter
 @st.cache_data
 def load_and_preprocess_data():
     # Load the dataset
-    data = pd.read_csv('C:/Users/JANANI V/Desktop/EmpAtt/Employee-Attrition.csv')
+    data = pd.read_csv('C:/Users/JANANI V/Desktop/EmpAtt/data/Employee-Attrition.csv')
     data.drop_duplicates(inplace=True)
     data.columns = data.columns.str.lower().str.replace(" ", "_")
     
